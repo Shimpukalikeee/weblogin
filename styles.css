@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins:wght@200;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #1E3163;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("assets/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.title .logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.title .title_text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.title .title_text .school_name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.title .title_text .school_name2 {
+    font-size: .8rem;
+    color: #ACACAC;
+}
+
+.header .title img {
+    width: 57px;
+    height: 57px;
+}
+
+.header .nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.header .nav a {
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.header .nav a:hover {
+    color: #6D61C2;
+}
+
+.header .blue_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: #2D2394;
+    color: white;
+    padding: .7rem;
+    width: 120px;
+    border: 1px solid #121163;
+    transition: all 0.2s ease-in-out;
+}
+
+.header .blue_button:hover {
+    background-color: #6D61C2;
+}
+
+.body {
+    display: flex;
+    height: 100%;
+}
+
+.body .content {
+    flex: 1;
+    background-color: #090341;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.content .content_text {
+    font-size: 2rem;
+}
+
+.content .content_text .gold {
+    color: #FFBE2E;
+}
+
+.content .content_text .content_text_small {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.content .content_button {
+    margin-top: 3rem;
+    display: flex;
+    width: max-content;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.content .content_button a {
+    color: white;
+    padding: 1rem;
+}
+
+.body .slider {
+    flex: 1;
+    background: url("./assets/bg.png");
+    background-size: 100% 100%;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.gallery .slider {
+    background-color: #090341;
+    width: 620px;
+    height: 390px;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.footer {
+    padding: 1rem;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #090341;
+    color: white;
+}
+
+.links {
+    display: flex;
+}
+
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about .about_header {
+    padding: 1rem;
+    background: #090341;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.about .about_body {
+    display: flex;
+    gap: 1rem;
+}
+
+.about .about_body .box {
+    width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.about .about_body .box .title {
+    color: #090341;
+    font-size: 1.5rem;
+}
+
+.card {
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.btn {
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+.btn-primary:hover, .btn-danger:hover, .btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary:hover {
+    background: #0044cc;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
+.btn-success:hover {
+    background: #218838;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
